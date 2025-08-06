@@ -234,5 +234,92 @@ $$
 - __Beweis durch Kontraposition__ 
 	- Ein Beweis der Aussage $A \Rightarrow B$ durch Kontraposition läuft nach folgendem Scheme ab: Wir nehmen an, es gelte $¬B$ und folgern, dass $¬A$ gilt.
 - __Indirekte Beweise (Beweis durch Widerspruch__) 
-- 
+	- Manchmal zieht man einen Beweis der Aussage $A \Rightarrow B$ auch folgendermaßen auf: Es gelte $A$. Angenommen, $B$ wäre falsch. Dann schließt man auf einen Widerspruch. Dieser Widerspruch zeigt, dass die Annahme "$B$ ist flasch." selbst falsch war, uns es folgt, das $B$ richtig sein muss.
+- __Ringschlüsse__
+	- Oft müssen Aussagen der Form:
+	  "wenn $A$ gilt, dann sind die Aussage $(i), (ii) \; und \; (iii)$ äquivalent" bewiesen werden. Am schnellsten geht es wenn $(i) \Rightarrow (ii), (ii) \Rightarrow (iii) \; und \; (iii) \Rightarrow (i)$ bewiesen wird.
 
+## 1.2.6 Korollar
+
+Satz = tiefes, wichtiges Resultat
+Proposition = Wichtige Ergebnisse, nicht so wichtig wie eine Satz
+Lemma = Besonders wichtiger Schlüsselgedanke
+Korollar = Folgerung aus einem Satz oder einer Proposition bzw. aus derem Bewei
+
+## 1.3 Mengen
+
+>[!DEFINITION]
+>Einige wichtige Begriffe rund um Mengen definiert:
+>(i) Eine Menge $N$ heißt Teilmenge einer Menge $M$, wenn jedes Element aus $N$     auch zu $M$ gehört, wenn also $\forall{x}:(x \in \mathbb{N}|x \in M)$ um eine       Teilmengenbeziehung auszudrücken benutzen wir das Symbol $\subseteq$.
+>(ii) Zwei Mengen $M$ und $N$ sind gleich falls $M \subseteq N$ und $N \subseteq M$,       wenn also $M$ und $N$ die gleichen Elemente enthalten.
+>(iii) Die leere Menge ist diejenige Menge, die kein einziges Element besitzt. Sie        wird mit $\emptyset$ bezeichnet.
+
+## 1.3.2 Beispiel
+
+Die Schreibweise $M := \{2'|i \; ist \; eine \; gerade \; Zahl\}$ bedeutet:
+$M$ wird definiert als die Menge $\{...,2^{-6}, 2^{-4}, 2^{-2}, 2^0, 2^2, 2^4, 2^6,...\}$
+
+>[!DEFINITION]
+>Seien $M$ und $N$ Mengen.
+>(i) Die Vereinigung von $M$ und $N$ wird mit $\cup$ bezeichnet und ist definiert als $M \cup N := \{x|x \in M \; und \; x\ in N\}$
+>(ii) Der Durchschnitt von $M$ und $N$ wird mit $\cap$ bezeichnet und ist definiert als $M \cap N := \{x|x \in M \; und \; x\ in N\}$
+>(iii) Die Differenzmenge von $M$ und $N$ wird mit $\setminus$ bezeichnet und ist definiert als $M \setminus N := \{x|x \in M \; und \; x\ in N\}$
+>(iv) Zwei Mengen $M$ und $N$ heißen disjunkt falls $M \cap N = \emptyset$ gilt
+
+### 1.3.4 Beispiele
+(a.) Seien $M:=\{1,2,3,4,5,6\}$ und $N := \{4,5,6,7,8\}$. Dann gilt
+$$ 
+	M \cup N = \{1,2,3,4,5,6,7,8\}
+$$
+$$
+	M \cap N = \{4,5,6\}
+$$
+$$
+	M \setminus N = \{1,2,3\}
+$$
+(b.) Sei $\mathbb{Z}$ die Menge der ganzen Zahlen $= \{..., -2, -1, 0, 1, 2,...\}$. Dann gilt: 
+
+$$
+	\mathbb{N} \cup \mathbb{Z} = \mathbb{Z}
+$$
+$$
+	\mathbb{N} \cap \mathbb{Z} = \mathbb{N}
+$$
+$$
+	\mathbb{N} \setminus \mathbb{Z} = \emptyset
+$$
+$$
+	\mathbb{Z} \setminus \mathbb{N} = {...,-2,-1,0}
+$$
+>[!DEFINITION]
+>Besitzt eine Menge $M$ nur endlich viele Elemente so sagen wir, das $M$ eine engliche Menge ist. Anderenfalls nennen wir $M$ eine unendliche Menge
+
+#### 1.3.6 Aufgabe
+1. Wenn $M \setminus N = \emptyset$ für zwei Mengen $M$ und $N$ gilt, so folgt $M=N$ 
+	1. Wahr. BEsp.: Sei $M := \{¸1,2} und $N := {1,2,3}$ dann ist $M \setminus N = \emptyset$ aber $M \neq N$ 
+2. Wenn $M \cup N$ endlich ist, dann sind $M$ und $N$ endlich 
+	1. Wahr. Angenommen $M$ wäre unendlich und $N$ endlich, dann ist $M \cup N$ unendlich. Denn wenn $M := \{1,2,3,...,\infty\}$ und $N := \{1,2,3\}$ dann ist $M \cup N$ unendlich
+3. Wenn $M \cap N$ endlich ist, dann sind $M$ und $N$ endlich
+	1. Falsch. Wenn $M := \{1,2,3,...,\infty\}$ und $N := \{1,2,3\}$ dann ist $M \cap N = \{1,2,3\}$ und somit endlich obwohl $M$ unendlich ist.
+
+>[!DEFINITION]
+>Sei $M$ eine Menge. Wir nennen $|M|$ die Mächtigkeit oder die Kardinalität von $M$
+
+#### 1.3.8 Aufgabe
+1. Wenn $|M \cup N| = |M| + |N|$ für endliche Mengen $M$ und $N$, so folgt $M \cap N = \emptyset$ 
+	1. Wahr. Seien $M$ und $N$ endlichen Mengen. Wenn $M$ und $N$ leer sing , gilt: $|M \cup N| = |M| + |N|$, die Voraussetzung und die Behauptung für diesen Spezialfall.
+	   Seien nun $M$ und $N$ nicht leere, endliche Mengen. Dann haben $M$ und $N$ die Form $M = \{x_i,...,x_m\}$ und $N = \{y_1,...,y_n\}$ für gewisse $m,n \in \mathbb{N}$. Sei $|M \cup N| = |M| + |N|$. Dann hat $M \cup N$ die Form $\{x_1,...,x_m,y_1,...,y_n\}$, es gilt also $x_i \neq y_j$ für alle $1 \leq i \leq m$ und $1 \leq j \leq n$. Somit gilt $x_i \neq N$ für alle $1 \leq i \leq m$ und $y_j \notin M$ für alle $1 \leq j \leq n$. Es folgt also $M \cap N = \emptyset$, die Behaptung.
+	2. Seien $M$ und $N$ endliche Mengen, So müssen drei Fälle betrachtet werden: 
+	   3. Sind $M$ und $N$ leer, so ist $M \cap N = \emptyset$ 
+	   4. Sei $M := \{x_i,...,x_m\}$ und $N := \{y_j,...,y_n\}$ wobei $y \notin N$ und $x \notin N$ und $1 \leq i \leq n$ sowie $1 \leq j \leq n$ so wäre $M \cap N = \emptyset$ und $|M \cup N| = |M|  + |N|$ 
+
+>[!DEFINITION]
+>Sind $M$ und $N$ nicht leere Mengen, so definieren wir die Produktmenge von $M \times N$ von $M$ und $N$ durch $M \times N := \{(m,n)|m \ in M \; und \; n \in N\}$
+>*Gleichheit geordneter Paare: $(m,n) = (m', n')$ genau dann wenn $m=m'$ und $n=n'$ 
+
+#### 1.3.10 Aufgabe 
+Sind $M$ und $N$ endliche, nicht leere Mengen, so ist |M \times N| = |M| \cdot |N|
+
+Wahr. Sei $M := \{x_i,...,x_m\}$ und sei $N := \{y_j,...,y_n\}$. Sei $x \in M$. Es gibt n geordnete Paare $(x_i, y_1),...,(x_i,y_n)$ und da es $m$ Möglichkeiten für $x_i$ gibt, folgt, dass es $m \cdot n$ Paare in $M \times N$ gibt.
+
+![[Screenshot 2025-08-07 at 01-11-24 Desmos Graphing Calculator.png]]
