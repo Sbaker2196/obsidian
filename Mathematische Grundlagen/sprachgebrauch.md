@@ -330,20 +330,22 @@ Wahr. Sei $M := \{x_i,...,x_m\}$ und sei $N := \{y_j,...,y_n\}$. Sei $x \in M$. 
 >(ii) Wenn $(m,n) \in f$ und $(m,n') \in f$, so folgt $n = n'$ 
 >$M$ heißt Definitionsbereich, $N$ heißt Wertebereich von $f$ 
 
-#### 1.4.2 Aufgabe
+#### 1.4.11 Aufgabe
 Welche der folgenden Teilmengen von $\mathbb{R} \times \mathbb{R}$ definieren Abbildungen von $\mathbb{R}$ nach $\mathbb{R}$ 
 - (a) $f:=\{(5,x)|x \in \mathbb{R}\}$ 
 	- keine Abbildung da für $x=5$ jeder Wert in $y$ möglich ist.
 - (b) $f:=\{(x,5)|x \in \mathbb{R}\}$
 	- Ist eine Abbildung das $x$ nur eine Wert $y=5$ möglich ist.
 
-## 1.4.3 Notation
+
+## 1.4.12 Notation
 Sei $f \subseteq M \times N$ eine Abbildung. Dann schreiben wir dafür $f: M \rightarrow N$ (gesprochen: $f$ ist eine Abbildung von $M$ nach $N$), und wir bezeichnen das zu $m \in N$ eindeutig bestimmte $n \in N$, für das $(m,n) \in f$ gilt, mit $n = f(m)$.
 Ist $m \in M$ so schreiben wir auch $m \mapsto f(m)$ (gesprochen $m$ wir auf $f(m)$ abgebildet).
 
 >[!DEFINITION]
 >Zwei Abbildungen $f:M \rightarrow N$ und $g: M' \rightarrow N'$ heißen gleich, falls $M = M'$ und $N = N'$ und $f(m)=g(m)$ für alle $m \in M$ gilt
 
+## 1.4.2 Bild und Urbilder
 >[!DEFINITION]
 >Sei $f:M \rightarrow N$ eine Abbildung, und sei $m \in M$. Man nennt $f(m)$ das ___Bild___ von $m$ unter $f$. Die Teilmenge $\{n \ in N| \exists{m} \in M \; mit \; f(m) = n\}$ von $N$ heißt das Bild oder der Bildbereich von $f$ und wird mit $Bild(f)$ oder $f(M)$ bezeichnet. 
 >Ist $n \in Bild(f)$, so wird $m \in M$ mit $f(m)=n$ ein ___Urbild___ von $n$ unter $f$ genannt.
@@ -369,4 +371,10 @@ f(x)=x^2
 >(i) $f$ heißt surjektiv, wenn jedes Element $n \in N$ im Bild von $f$ liegt.
 >(ii) $f$ heißt injektiv, wenn jedes Element das Bild von $f$ genau ein Urbild besitzt
 >(iii) $f$ heißt bijektiv, wenn $f$ sowohl surjektiv als auch injektiv ist.
+
+## 1.4.8 Beobachtung:
+Sei $f: M \rightarrow N$ eine Abbildung.
+(a) Jedes Element $m \in M$ besitzt genau ein Bild unter $f$. Dies ist gerade die Forderung, dass $f$ eine Abbildung ist. 
+(b) Nicht jedes Element $n \in N$ muss im Bild von $f$ liegen. In dem Beispiel in Aufgabe 1.4.7 liegen beispielsweise die negativen reellen Zahlen nicht im Bild von $f$.
+(c) Wenn $n$ im Bild von $f$ liegt, dann kann es zu $n$ durchaus mehrere Urbilder geben. Beispielsweise liegt 4 im Bild der Abbildung in Aufgabe 1.4.7, und es sind 2 und -2 Urbilder von 4 unter $f$.
 

@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1b3c1856bed21b4f",
@@ -171,8 +172,8 @@
   },
   "active": "b4256896bd0dbefd",
   "lastOpenFiles": [
-    "Screenshot 2025-08-07 at 01-11-24 Desmos Graphing Calculator.png",
     "1.2.4.md",
-    "Mathematische Grundlagen/sprachgebrauch.md"
+    "Mathematische Grundlagen/sprachgebrauch.md",
+    "Screenshot 2025-08-07 at 01-11-24 Desmos Graphing Calculator.png"
   ]
 }
