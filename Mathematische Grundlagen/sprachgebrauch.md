@@ -309,17 +309,64 @@ $$
 1. Wenn $|M \cup N| = |M| + |N|$ für endliche Mengen $M$ und $N$, so folgt $M \cap N = \emptyset$ 
 	1. Wahr. Seien $M$ und $N$ endlichen Mengen. Wenn $M$ und $N$ leer sing , gilt: $|M \cup N| = |M| + |N|$, die Voraussetzung und die Behauptung für diesen Spezialfall.
 	   Seien nun $M$ und $N$ nicht leere, endliche Mengen. Dann haben $M$ und $N$ die Form $M = \{x_i,...,x_m\}$ und $N = \{y_1,...,y_n\}$ für gewisse $m,n \in \mathbb{N}$. Sei $|M \cup N| = |M| + |N|$. Dann hat $M \cup N$ die Form $\{x_1,...,x_m,y_1,...,y_n\}$, es gilt also $x_i \neq y_j$ für alle $1 \leq i \leq m$ und $1 \leq j \leq n$. Somit gilt $x_i \neq N$ für alle $1 \leq i \leq m$ und $y_j \notin M$ für alle $1 \leq j \leq n$. Es folgt also $M \cap N = \emptyset$, die Behaptung.
-	2. Seien $M$ und $N$ endliche Mengen, So müssen drei Fälle betrachtet werden: 
-	   3. Sind $M$ und $N$ leer, so ist $M \cap N = \emptyset$ 
-	   4. Sei $M := \{x_i,...,x_m\}$ und $N := \{y_j,...,y_n\}$ wobei $y \notin N$ und $x \notin N$ und $1 \leq i \leq n$ sowie $1 \leq j \leq n$ so wäre $M \cap N = \emptyset$ und $|M \cup N| = |M|  + |N|$ 
+2. Seien $M$ und $N$ endliche Mengen, So müssen drei Fälle betrachtet werden: 
+	   1. Sind $M$ und $N$ leer, so ist $M \cap N = \emptyset$ 
+	   2. Sei $M := \{x_i,...,x_m\}$ und $N := \{y_j,...,y_n\}$ wobei $y \notin N$ und $x \notin N$ und $1 \leq i \leq n$ sowie $1 \leq j \leq n$ so wäre $M \cap N = \emptyset$ und $|M \cup N| = |M|  + |N|$ 
 
 >[!DEFINITION]
 >Sind $M$ und $N$ nicht leere Mengen, so definieren wir die Produktmenge von $M \times N$ von $M$ und $N$ durch $M \times N := \{(m,n)|m \ in M \; und \; n \in N\}$
->*Gleichheit geordneter Paare: $(m,n) = (m', n')$ genau dann wenn $m=m'$ und $n=n'$ 
+>*Gleichheit geordneter Paare: $(m,n) = (m', n')$ genau dann wenn $m=m'$ und $n=n'$.
 
 #### 1.3.10 Aufgabe 
-Sind $M$ und $N$ endliche, nicht leere Mengen, so ist |M \times N| = |M| \cdot |N|
+Sind $M$ und $N$ endliche, nicht leere Mengen, so ist $|M \times N| = |M| \cdot |N|$
 
 Wahr. Sei $M := \{x_i,...,x_m\}$ und sei $N := \{y_j,...,y_n\}$. Sei $x \in M$. Es gibt n geordnete Paare $(x_i, y_1),...,(x_i,y_n)$ und da es $m$ Möglichkeiten für $x_i$ gibt, folgt, dass es $m \cdot n$ Paare in $M \times N$ gibt.
 
-![[Screenshot 2025-08-07 at 01-11-24 Desmos Graphing Calculator.png]]
+## 1.4 Abbildungen
+
+>[!DEFINITION]
+>Seien $M$ und $N$ Mengen. Eine Abbildung von $M$ nach $N$ ist eine Teilmenge $f \subseteq M \times N$ ,so dass folgende Eigenschaften gelten:
+>(i) Für alle $m \in M$$ gibt es ein $n \in N$, so dass $(m,n) \in f$
+>(ii) Wenn $(m,n) \in f$ und $(m,n') \in f$, so folgt $n = n'$ 
+>$M$ heißt Definitionsbereich, $N$ heißt Wertebereich von $f$ 
+
+#### 1.4.2 Aufgabe
+Welche der folgenden Teilmengen von $\mathbb{R} \times \mathbb{R}$ definieren Abbildungen von $\mathbb{R}$ nach $\mathbb{R}$ 
+- (a) $f:=\{(5,x)|x \in \mathbb{R}\}$ 
+	- keine Abbildung da für $x=5$ jeder Wert in $y$ möglich ist.
+- (b) $f:=\{(x,5)|x \in \mathbb{R}\}$
+	- Ist eine Abbildung das $x$ nur eine Wert $y=5$ möglich ist.
+
+## 1.4.3 Notation
+Sei $f \subseteq M \times N$ eine Abbildung. Dann schreiben wir dafür $f: M \rightarrow N$ (gesprochen: $f$ ist eine Abbildung von $M$ nach $N$), und wir bezeichnen das zu $m \in N$ eindeutig bestimmte $n \in N$, für das $(m,n) \in f$ gilt, mit $n = f(m)$.
+Ist $m \in M$ so schreiben wir auch $m \mapsto f(m)$ (gesprochen $m$ wir auf $f(m)$ abgebildet).
+
+>[!DEFINITION]
+>Zwei Abbildungen $f:M \rightarrow N$ und $g: M' \rightarrow N'$ heißen gleich, falls $M = M'$ und $N = N'$ und $f(m)=g(m)$ für alle $m \in M$ gilt
+
+>[!DEFINITION]
+>Sei $f:M \rightarrow N$ eine Abbildung, und sei $m \in M$. Man nennt $f(m)$ das ___Bild___ von $m$ unter $f$. Die Teilmenge $\{n \ in N| \exists{m} \in M \; mit \; f(m) = n\}$ von $N$ heißt das Bild oder der Bildbereich von $f$ und wird mit $Bild(f)$ oder $f(M)$ bezeichnet. 
+>Ist $n \in Bild(f)$, so wird $m \in M$ mit $f(m)=n$ ein ___Urbild___ von $n$ unter $f$ genannt.
+
+#### 1.4.7 Aufgabe
+Sei $f: \mathbb{R} \mapsto \mathbb{R}$ definiert durch $f(x)=x^2$ für alle $x \in \mathbb{R}$. Skizzieren Sie den Funktionsgraphen von $f$. Welche reellen Zahlen liegen im Bild von $f$? Wie viele Urbilder haben diejenigen Elemente, die in $Bild(f)$ liegen?
+
+
+```functionplot
+---
+xLabel: X
+yLabel: >
+bounds: [-5,5,-5,5]
+disableZoom: false
+grid: true
+---
+f(x)=x^2
+```
+1. $Bild(f)=[0,\infty) = \{y \in \mathbb{R} | y \geq 0\}$
+2. Element $0$ hat ein Urbild, alle anderen Elemente $y \geq 0$ haben zwei Urbilder
+
+>[!DEFINITION]
+>(i) $f$ heißt surjektiv, wenn jedes Element $n \in N$ im Bild von $f$ liegt.
+>(ii) $f$ heißt injektiv, wenn jedes Element das Bild von $f$ genau ein Urbild besitzt
+>(iii) $f$ heißt bijektiv, wenn $f$ sowohl surjektiv als auch injektiv ist.
+
