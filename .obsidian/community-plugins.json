@@ -1,5 +1,6 @@
 [
   "github-sync",
   "cm-typewriter-scroll-obsidian",
-  "obsidian-functionplot"
+  "obsidian-functionplot",
+  "obsidian-plugin-toc"
 ]

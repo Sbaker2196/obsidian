@@ -1,9 +1,12 @@
-# 1.1 Das Summensymbol: 
 
-$\sum$, der griechische Buchstabe __*Sigma*__, der dem deutsche "S" entspricht. Man spricht dieses Symbol "Summe" aus.
+
+
+## 1.1 Das Summensymbol: 
+
+$\sum$, der griechische Buchstabe __*Sigma*__, der dem deutschen "S" entspricht. Man spricht dieses Symbol "Summe" aus.
 Sofern keine Klammern um die Summen stehen, können sie vertausche werden: 
 
-$$\sum_{1\leq j \leq n} \sum_{1 \leq i \leq m} a_{ij}$$
+$$\sum_{1\leq j \leq n} \sum_{1 \leq i \leq m} a_{ji}=\sum_{1 \leq i \leq m}\sum_{1\leq j \leq n} a_{ij}$$
 
 #### 1.1.2 Aufgabe
 Schreiben sie folgenden Ausdruck als Summe: 
@@ -20,34 +23,33 @@ Berechnen Sie $\sum_{i=1}^{5} i^2$
 
 $$ = 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 1 + 4 + 9+ 16 + 25 = 55$$
 
-# 1.2 Aussagen 
+## 1.2 Aussagen 
 
 > [!DEFINITION]
-> Eine Aussage ist jeder Sat dem die Eigenschaft "wahr" oder "falsch" zugeordnet werden kann 
+> Eine Aussage ist jeder Satz dem die Eigenschaft "wahr" oder "falsch" zugeordnet werden kann 
 
-## 1.2.1 Beispiel
+### 1.2.1 Beispiel
 "Es gibt unendlich viele natürliche Zahlen $x,y,z$, so dass die Gleichung $x^2+y^2=z^2$ lösbar ist"
 
 #### 1.2.2 Aufgabe
 Sind die folgenden Sätze Aussagen? Begründen Sie. 
 
 1. Es gibt unendliche viele Primzahlen: 
-   Diese Aussage ist wahr, behauptet etwas das mit "wahr" oder "falsch" bewertet werde kann
+   Diese Aussage ist wahr, sie behauptet etwas das mit "wahr" oder "falsch" bewertet werden kann
 2. $(a+b)^2$
    Dies ist keine Aussage. Der Satz beinhaltet keine Behauptung die "wahr" oder "falsch" sein kann.
-3. Für jede reelle Zahlt $a$ gile $a \cdot 0=0$
+3. Für jede reelle Zahlt $a$ gilt $a \cdot 0=0$
    Dies ist eine Aussage, sie kann "wahr" oder "falsch" sein.
 4. Wenn $12 \leq 9$ so folgt $6 \geq 7$ und $2 \cdot 2 = 4$
    Dies ist eine Aussage, sie kann entweder "wahr" oder "falsch" sein.
 
-
-## 1.2.1 Junktoren
+### 1.2.1 Junktoren
 Aus Aussagen können neue Aussagen gebildet werden. 
 
 - (a) Die Negation ¬: Wenn $A$ eine Aussage ist, so kann $A$ die Eigenschaft wahr oder falsch zugeordnet werden.
 
 > [!DEFINITION]
-> Die Negation von $¬A$ von $A$ ist diejenige Aussage, die falsch ist, wenn $A$ wahr istm und die wahr ist, wenn $A$ falsch ist.
+> Die Negation $¬A$ von $A$ ist diejenige Aussage, die falsch ist, wenn $A$ wahr ist und die wahr ist, wenn $A$ falsch ist.
 
 | $A$ | $¬A$ |
 | :-: | :--: |
@@ -125,7 +127,7 @@ Beweisen Sie, dass die Wahrheitstafeln von $¬(A \wedge B)$ und $(¬A) \lor (¬B
 >[!DEFINITION]
 >Wenn zwei Aussagen dieselben Wahrheitstaflen habe, so sagen wir, dass die Aussagen logisch äquivalent sind
 
-## 1.2.2 Quantoren 
+### 1.2.2 Quantoren 
 
 >[!DEFINITION]
 >Existenzquantor $\exists$: Das Symbol $\exists$ wir verbal durch "Es gibt ein" ausgedrückt
@@ -157,7 +159,7 @@ Drücken Sie folgende Aussagen mit Hilfe von Quantoren aus.
 	1. $\exists{p}: 3$ teilt $p$
 2. Für alle natürlichen Zahlen $n$ gilt $n \geq 1$
 	1. $\forall{n}:n \geq 1$
-## 1.2.3 Negation von All- und Existenzaussagen
+### 1.2.3 Negation von All- und Existenzaussagen
 
 Die Negation der Aussage "Es gibt ein $x$ mit $A$" ist die Aussage "Für alle $x$ gilt die Aussagen $¬A$"
 ###### 1.2.21 Merkregel
@@ -169,7 +171,7 @@ Wahr oder Falsch? Die Negation der Aussage.
 	1. $\exists{p} \; Primzahl: p \; gerade \wedge p \geq 3 = \forall{p} \; Primzahl: p \; ist \; ungerade \; \lor p\leq3$ 
 2. "Es gibt eine reelle zahl $x$ mit $x^2 +1 \leq 0$" ist "Für alle reellen Zahlen $x$ gilt $x^2 + 1 \geq 0$"
 	1. $\exists{x} \in \mathbb{R}: x^2+1 \le 0=\forall{x} \in \mathbb{R}: x² + 1 \geq 0$
-3. "Es gibe eine Zahl $a \in \mathbb{Z}$ mit $a > 3$ und $a<4$" ist "Für alle ganzen Zahlen $a \in \mathbb{Z} gilt $a \leq 3$ oder $a \geq 4$"
+3. "Es gibe eine Zahl $a \in \mathbb{Z}$ mit $a > 3$ und $a<4$" ist "Für alle ganzen Zahlen $a \in \mathbb{Z}$ gilt $a \leq 3$ oder $a \geq 4$"
 	1. $\exists{a} \in \mathbb{Z}: a > 3 \wedge a < 4 = \forall{a} \in \mathbb{Z}: a \leq 3 \lor a \geq 4$
 
 ###### 1.2.23 Merkregel
@@ -225,7 +227,7 @@ $$
 $$
 =1-\frac{1}{n+2} \tag{$\blacksquare$}
 $$
-## 1.2.5 Beweise
+### 1.2.5 Beweise
 
 - __Das Prinzip der vollständigen Induktion__
 	- Beschrieben in Abschnitt [[1.2.4]]. Anwendbar auf Aussagen der Form "Beweisen Sie, dass für alle $n \in \mathbb{N}$ folgendes gilt."  
@@ -239,7 +241,7 @@ $$
 	- Oft müssen Aussagen der Form:
 	  "wenn $A$ gilt, dann sind die Aussage $(i), (ii) \; und \; (iii)$ äquivalent" bewiesen werden. Am schnellsten geht es wenn $(i) \Rightarrow (ii), (ii) \Rightarrow (iii) \; und \; (iii) \Rightarrow (i)$ bewiesen wird.
 
-## 1.2.6 Korollar
+### 1.2.6 Korollar
 
 Satz = tiefes, wichtiges Resultat
 Proposition = Wichtige Ergebnisse, nicht so wichtig wie eine Satz
@@ -296,7 +298,7 @@ $$
 
 #### 1.3.6 Aufgabe
 1. Wenn $M \setminus N = \emptyset$ für zwei Mengen $M$ und $N$ gilt, so folgt $M=N$ 
-	1. Wahr. BEsp.: Sei $M := \{¸1,2} und $N := {1,2,3}$ dann ist $M \setminus N = \emptyset$ aber $M \neq N$ 
+	1. Wahr. Bsp.: Sei $M := \{1,2\}$ und $N := {1,2,3}$ dann ist $M \setminus N = \emptyset$ aber $M \neq N$ 
 2. Wenn $M \cup N$ endlich ist, dann sind $M$ und $N$ endlich 
 	1. Wahr. Angenommen $M$ wäre unendlich und $N$ endlich, dann ist $M \cup N$ unendlich. Denn wenn $M := \{1,2,3,...,\infty\}$ und $N := \{1,2,3\}$ dann ist $M \cup N$ unendlich
 3. Wenn $M \cap N$ endlich ist, dann sind $M$ und $N$ endlich
@@ -307,14 +309,14 @@ $$
 
 #### 1.3.8 Aufgabe
 1. Wenn $|M \cup N| = |M| + |N|$ für endliche Mengen $M$ und $N$, so folgt $M \cap N = \emptyset$ 
-	1. Wahr. Seien $M$ und $N$ endlichen Mengen. Wenn $M$ und $N$ leer sing , gilt: $|M \cup N| = |M| + |N|$, die Voraussetzung und die Behauptung für diesen Spezialfall.
+	1. Wahr. Seien $M$ und $N$ endlichen Mengen. Wenn $M$ und $N$ leer sind , gilt: $|M \cup N| = |M| + |N|$, die Voraussetzung und die Behauptung für diesen Spezialfall.
 	   Seien nun $M$ und $N$ nicht leere, endliche Mengen. Dann haben $M$ und $N$ die Form $M = \{x_i,...,x_m\}$ und $N = \{y_1,...,y_n\}$ für gewisse $m,n \in \mathbb{N}$. Sei $|M \cup N| = |M| + |N|$. Dann hat $M \cup N$ die Form $\{x_1,...,x_m,y_1,...,y_n\}$, es gilt also $x_i \neq y_j$ für alle $1 \leq i \leq m$ und $1 \leq j \leq n$. Somit gilt $x_i \neq N$ für alle $1 \leq i \leq m$ und $y_j \notin M$ für alle $1 \leq j \leq n$. Es folgt also $M \cap N = \emptyset$, die Behaptung.
-2. Seien $M$ und $N$ endliche Mengen, So müssen drei Fälle betrachtet werden: 
+2. Seien $M$ und $N$ endliche Mengen, So müssen zwei (drei) Fälle betrachtet werden: 
 	   1. Sind $M$ und $N$ leer, so ist $M \cap N = \emptyset$ 
-	   2. Sei $M := \{x_i,...,x_m\}$ und $N := \{y_j,...,y_n\}$ wobei $y \notin N$ und $x \notin N$ und $1 \leq i \leq n$ sowie $1 \leq j \leq n$ so wäre $M \cap N = \emptyset$ und $|M \cup N| = |M|  + |N|$ 
+	   2. Sei $M := \{x_i,...,x_m\}$ und $N := \{y_j,...,y_n\}$ wobei $y \notin M$ und $x \notin N$ und $1 \leq i \leq n$ sowie $1 \leq j \leq n$ so wäre $M \cap N = \emptyset$ und $|M \cup N| = |M|  + |N|$ 
 
 >[!DEFINITION]
->Sind $M$ und $N$ nicht leere Mengen, so definieren wir die Produktmenge von $M \times N$ von $M$ und $N$ durch $M \times N := \{(m,n)|m \ in M \; und \; n \in N\}$
+>Sind $M$ und $N$ nicht leere Mengen, so definieren wir die Produktmenge von $M \times N$ von $M$ und $N$ durch $M \times N := \{(m,n)|m \; in\; M \; und \; n \in N\}$
 >*Gleichheit geordneter Paare: $(m,n) = (m', n')$ genau dann wenn $m=m'$ und $n=n'$.
 
 #### 1.3.10 Aufgabe 
@@ -347,7 +349,7 @@ Ist $m \in M$ so schreiben wir auch $m \mapsto f(m)$ (gesprochen $m$ wir auf $f(
 
 ## 1.4.2 Bild und Urbilder
 >[!DEFINITION]
->Sei $f:M \rightarrow N$ eine Abbildung, und sei $m \in M$. Man nennt $f(m)$ das ___Bild___ von $m$ unter $f$. Die Teilmenge $\{n \ in N| \exists{m} \in M \; mit \; f(m) = n\}$ von $N$ heißt das Bild oder der Bildbereich von $f$ und wird mit $Bild(f)$ oder $f(M)$ bezeichnet. 
+>Sei $f:M \rightarrow N$ eine Abbildung, und sei $m \in M$. Man nennt $f(m)$ das ___Bild___ von $m$ unter $f$. Die Teilmenge $\{n \in N| \exists{m} \in M \; mit \; f(m) = n\}$ von $N$ heißt das Bild oder der Bildbereich von $f$ und wird mit $Bild(f)$ oder $f(M)$ bezeichnet. 
 >Ist $n \in Bild(f)$, so wird $m \in M$ mit $f(m)=n$ ein ___Urbild___ von $n$ unter $f$ genannt.
 
 #### 1.4.7 Aufgabe
@@ -367,14 +369,38 @@ f(x)=x^2
 1. $Bild(f)=[0,\infty) = \{y \in \mathbb{R} | y \geq 0\}$
 2. Element $0$ hat ein Urbild, alle anderen Elemente $y \geq 0$ haben zwei Urbilder
 
->[!DEFINITION]
->(i) $f$ heißt surjektiv, wenn jedes Element $n \in N$ im Bild von $f$ liegt.
->(ii) $f$ heißt injektiv, wenn jedes Element das Bild von $f$ genau ein Urbild besitzt
->(iii) $f$ heißt bijektiv, wenn $f$ sowohl surjektiv als auch injektiv ist.
-
 ## 1.4.8 Beobachtung:
 Sei $f: M \rightarrow N$ eine Abbildung.
 (a) Jedes Element $m \in M$ besitzt genau ein Bild unter $f$. Dies ist gerade die Forderung, dass $f$ eine Abbildung ist. 
 (b) Nicht jedes Element $n \in N$ muss im Bild von $f$ liegen. In dem Beispiel in Aufgabe 1.4.7 liegen beispielsweise die negativen reellen Zahlen nicht im Bild von $f$.
 (c) Wenn $n$ im Bild von $f$ liegt, dann kann es zu $n$ durchaus mehrere Urbilder geben. Beispielsweise liegt 4 im Bild der Abbildung in Aufgabe 1.4.7, und es sind 2 und -2 Urbilder von 4 unter $f$.
 
+>[!DEFINITION]
+>(i) $f$ heißt surjektiv, wenn jedes Element $n \in N$ im Bild von $f$ liegt.
+>(ii) $f$ heißt injektiv, wenn jedes Element im Bild von $f$ genau ein Urbild besitzt
+>(iii) $f$ heißt bijektiv, wenn $f$ sowohl surjektiv als auch injektiv ist.
+
+
+## 1.4.10 Beispiele
+- (a) Sei $f: \mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$ definiert durch $f((x,y)) = x+y$ für alle $(x,y) \in \mathbb{R} \times \mathbb{R}$. Dann ist $f$ surjektiv, denn wenn $z \in \mathbb{R}$, dann gilt $(0, z) \in \mathbb{R} \times \mathbb{R}$, und es ist $f((0,z)) = 0 + z = z$. Jedes $z \in \mathbb{R}$ besitzt also ein Urbild unter $f$. 
+- (b) Sei $g: \mathbb{N} \rightarrow \mathbb{Z}$ definiert durch $g(n) = -n$ für alle $n \in \mathbb{N}$. Dann ist $g$ nicht surjektiv, denn das Element $0 \in \mathbb{Z}$ besitzt kein Urbild.
+
+> ___Beweisen der Injektivität einer Abbildung___: 
+> Man nimmt ein beliebiges Element $n \in Bild(f)$ und nimmt an, dieses Element hat die Urbilder $m$ und $m'$, also $f(m)$ und $f(m')$. Dann leitet man aus dieser Gleichung her, dass $m = m'$ sein muss, dass $n$ also nur ein einziges Urbild hat.
+
+
+>___Beweisen der Nicht-Injektivität einer Abbildung___: 
+>Um zu beweisen das $f$ nicht-injektiv ist, reicht es aus, zwei verschiedene Elemente $m$ und $m'$ in $M$ anzugeben, für die $f(m) = f(m')$ ist.
+
+## 1.4.11 Beispiele
+- (a) Sei $f: \mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$ definiert durch $f((x,y)) = x + y$ für alle $(x,y) \in \mathbb{R} \times \mathbb{R}$. Dann ist $f$ nicht injektiv, denn es sind $(0,3)$ und $(1,2)$ verschiedene Elemente in $\mathbb{R} \times \mathbb{R}$, für die $f((0,3)) = f((1,2)) = 3$ gilt.
+- (b) Sei $g: \mathbb{N} \rightarrow \mathbb{Z}$ definiert durch $g(n)=-n$ für alle $n \in \mathbb{N}$. Dann ist $g$ injektiv, denn wenn $z = g(m)=g(m')$ für Elemente $m, m' \in \mathbb{N}$ gilt, so folgt $-m = -m'$, also $m = m'$.
+
+#### 1.4.12 Aufgabe
+Sei $f: \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z}$ definiert durch $f(z) = (z, z+1)$ für alle $z \in \mathbb{Z}$. Untersuchen Sie, ob $f$ injektiv, surjektiv oder bijektiv ist.
+
+- __Behauptung__: Die Abbildung $f$ ist injektiv
+	- Seien $z$ und $z'$ in $\mathbb{Z}$ mit $f(z) = f(z')$. Dann gilt $(z, z+1) = (z', z'+1)$. Es folgt $z=z'$, das heißt $f$ ist injektiv
+- __Behauptung__: Die Abbildung $f$ ist nicht surjektiv
+	- Es ist $(0,2) \in \mathbb{Z} \times \mathbb{Z}$, aber es gibt kein $z \in \mathbb{Z}$ mit $(z,z+1) = (0,2)$. Somit besitzt nicht jedes Element in $\mathbb{Z} \times \mathbb{Z}$ ein Urbild unter $f$, das heißt, $f$ ist nicht surjektiv
+- Da $f$ nicht surjektiv ist, ist $f$ auch nicht bijektiv
